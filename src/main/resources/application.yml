@@ -1,0 +1,18 @@
+spring:
+    datasource:
+        password: 1234
+        url: jdbc:postgresql://localhost:5432/jwtlms
+        username: postgres
+    jpa:
+        hibernate:
+            ddl-auto: update
+        show-sql: true
+
+server:
+    port: 8080
+
+    error:
+        include-stacktrace: always
+app:
+    jwt:
+        secret: Java12
